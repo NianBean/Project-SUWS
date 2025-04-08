@@ -1,0 +1,25 @@
+# นโยบายสำหรับผู้ดูแลระบบ (admin)
+p, admin, course, create
+p, admin, course, update
+p, admin, course, delete
+p, admin, course, view
+p, admin, student, view
+
+# นโยบายสำหรับอาจารย์ (teacher)
+p, teacher, course, view
+p, teacher, grade, update
+p, teacher, student, view
+p, teacher, grade, view
+
+# นโยบายสำหรับนักศึกษา (student)
+p, student, course, view
+p, student, grade, view
+
+# กำหนดความสัมพันธ์ระหว่างผู้ใช้กับ Role
+g, alice, admin
+g, bob, teacher
+g, charlie, student
+
+# สมมุติว่า nuttachot สามารถมีหลาย role คือ teacher และ student
+g, nuttachot, teacher
+g, nuttachot, student
